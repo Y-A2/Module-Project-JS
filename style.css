@@ -136,3 +136,21 @@
     #mode {
     text-decoration: underline;
     }
+
+    button:hover {
+        font-weight:700;
+        transition: font-weight, font-size, 1s;
+        font-size: 35px;
+    }
+
+    select:hover {
+        font-weight:700;
+        transition: font-weight, font-size, 1s;
+        font-size: 35px;
+    }
+
+    .clicked
+    {
+        border: 3px solid rgb(40, 161, 40);
+        color: rgb(40, 161, 40);
+    }
