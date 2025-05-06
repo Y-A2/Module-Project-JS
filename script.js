@@ -31,12 +31,12 @@ document.getElementById("numberly").addEventListener("click", number);
     {
         var answer = a1 + a2;
         var round = answer.toFixed(2);
-        document.getElementById("answer").innerHTML = `${a1} + ${a2} = ${round}.`
+        document.getElementById("answer").innerHTML = `${a1} + (${a2}) = ${round}.`
     }
     else if (option == "-") {
         var answer = a1 - a2;
         var round = answer.toFixed(2);
-        document.getElementById("answer").innerHTML = `${a1} - ${a2} = ${round}.`
+        document.getElementById("answer").innerHTML = `${a1} - (${a2}) = ${round}.`
     }
     else if (option == "x")
     {
@@ -48,7 +48,13 @@ document.getElementById("numberly").addEventListener("click", number);
     {
         var answer = a1 / a2;
         var round = answer.toFixed(2);
+        if(a2 == 0)
+        {
+        document.getElementById("answer").innerHTML = `${a1} ÷ ${a2} = undefined.`
+        }
+        else {
         document.getElementById("answer").innerHTML = `${a1} ÷ ${a2} = ${round}.`
+        }
     }
 
     }
