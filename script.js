@@ -6,9 +6,12 @@ document.getElementById("numberly").addEventListener("click", number);
 
     function number()
     {
+        document.getElementById("numberly").classList.add("clicked");
         let unit = document.getElementById("selects").value;
         var a = document.getElementById("inputs2").value ** 2;
         var b = document.getElementById("inputs3").value ** 2;
+        document.getElementById("inputs2").value = "";
+        document.getElementById("inputs3").value = "";
         let answer1 = a + b;
         let answer2 = Math.sqrt(a + b);
         let final = answer1.toFixed(2);
@@ -18,9 +21,12 @@ document.getElementById("numberly").addEventListener("click", number);
     }
 
     function calculate() {
+        document.getElementById("calculate").classList.add("clicked");
         let a1 = +document.getElementById("inputs").value;
         let a2 = +document.getElementById("inputs1").value;
         let option = document.getElementById("select").value;
+        document.getElementById("inputs").value = "";
+        document.getElementById("inputs1").value = "";
     if (option == "+")
     {
         var answer = a1 + a2;
@@ -110,9 +116,13 @@ document.getElementById("numberly").addEventListener("click", number);
 
     function cost()
     {
+        document.getElementById("button").classList.add("clicked");
         var pay = +document.getElementById("input").value;
         var tips = +document.getElementById("input1").value;
         var actualCost = document.getElementById("input2").value;
+        document.getElementById("input").value = "";
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
         var change = actualCost - pay;
         var rounded = change.toFixed(2);
     if (rounded > 0)
