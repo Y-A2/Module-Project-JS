@@ -88,6 +88,7 @@ document.getElementById("numberly").addEventListener("click", number);
         document.getElementById("inputs2").classList.remove("working2");
         document.getElementById("inputs3").classList.remove("working2");
         document.getElementById("selects").classList.remove("working2");
+        document.getElementById("selects").classList.remove("greyish");
     }
 
     function onClick2()
@@ -118,6 +119,7 @@ document.getElementById("numberly").addEventListener("click", number);
         document.getElementById("inputs2").classList.add("working2");
         document.getElementById("inputs3").classList.add("working2");
         document.getElementById("selects").classList.add("working2");
+        document.getElementById("selects").classList.add("greyish");
     }
 
     function cost()
